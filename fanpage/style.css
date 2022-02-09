@@ -1,0 +1,33 @@
+body 
+{
+    background-color: #202225;
+    color: white;
+    margin: 0;
+}
+header, footer
+{
+    background-color: #2f3136;
+    margin: 0;
+    padding: 1rem 1rem;
+}
+main 
+{
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+a 
+{
+    color: #ff7474;
+    transition: all ease 0.2s;
+}
+a:hover 
+{
+    color: #6b6e74;
+}
+a.nav
+{
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+}
