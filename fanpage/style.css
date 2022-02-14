@@ -5,9 +5,30 @@ body
     margin: 0;
     font-family: 'Roboto Condensed', Helvetica, sans-serif;
 }
+@font-face {
+    font-family: SimmTitle;
+    src: url(https://data.simmgames.com/font/simmtitle.woff2);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: RondaBSquare;
+    src: url(https://data.simmgames.com/font/rondab.woff2);
+    font-weight: normal;
+}
+h1 
+{
+    font-family: SimmTitle, Helvetica, sans-serif;
+    font-size: 5rem;
+    margin: 0.1em 0;
+}
 h1, h2 
 {
     color: #fff;
+}
+h2, h3, h4
+{
+    font-family: RondaBSquare, Helvetica, sans-serif;
 }
 header, footer
 {
