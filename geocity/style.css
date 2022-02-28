@@ -1,0 +1,53 @@
+.bg1 {
+    background-image: url("./src/city.gif");
+}
+.bg2 {
+    background-image: url("./src/computers.gif");
+}
+.bg3 {
+    background-image: url("./src/ramen-shop.gif");
+}
+.bg4 {
+    background-image: url("./src/lain.gif");
+}
+
+h1 {
+    font-family: SimmTitle, RondaBSquare, Helvetica, sans-serif;
+    font-size: 8em;
+    margin: 0;
+    background: -webkit-linear-gradient(#00b7ff, #7ac6ff, #ffbc1f, #b98200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.block {
+    height: 100vh;
+    background-size: 100%;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+.centered {
+    margin: auto;
+    width: fit-content;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: RondaBSquare, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: SimmTitle;
+    src: url(https://data.simmgames.com/font/simmtitle.woff2);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: RondaBSquare;
+    src: url(https://data.simmgames.com/font/rondab.woff2);
+    font-weight: normal;
+}
