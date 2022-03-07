@@ -10,24 +10,51 @@
 .bg4 {
     background-image: url("./src/lain.gif");
 }
+.bg5 {
+    background-image: url("./src/sword-city.gif");
+}
 
 h1 {
     font-family: SimmTitle, RondaBSquare, Helvetica, sans-serif;
     font-size: 8em;
-    margin: 0;
+    color: #00b7ff;
     background: -webkit-linear-gradient(#00b7ff, #7ac6ff, #ffbc1f, #b98200);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 8em, 0;
+}
+
+.title {
+    font-family: SimmTitle, RondaBSquare, Helvetica, sans-serif;
+    color: #00b7ff;
+    background: -webkit-linear-gradient(#00b7ff, #7ac6ff, #ffbc1f, #b98200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
 }
 
 .block {
-    height: 100vh;
-    background-size: 100%;
+    background-size: cover;
     image-rendering: crisp-edges;
     image-rendering: pixelated;
     background-attachment: fixed;
+    background-position: center;
+    padding: 1em 0;
+    min-height: 100vh;
 }
+
+.shadeBlock {
+    max-width: 70rem;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 80%);
+    border-radius: 0.5em;
+}
+
 
 .centered {
     margin: auto;
