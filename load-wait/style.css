@@ -19,6 +19,8 @@ body
 
     --part: 86.6px;
     --neg-part: -86.6px;
+
+    --cube: 50px;
 }
 
 a {
@@ -40,17 +42,35 @@ a:hover {
     position: absolute;
     transform: translate(-25px, -25px);
 }
+.load-bar{
+    flex-direction: row;
+    display: flex;
+    transform: translateX(-135px);
+    background-color: #2F3136;
+    padding: 10px;;
+}
 .cube
 {
     background-color: red;
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: var(--cube);
+    height: var(--cube);
 
     border-radius: 20%;
 
     animation-duration: 10s;
     animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.sharp-cube
+{
+    background-color: red;
+    width: var(--cube);
+    height: var(--cube);
+
+    animation-duration: 10s;
+    animation-iteration-count: 1;
     animation-timing-function: ease;
 }
 
@@ -65,7 +85,7 @@ a:hover {
     padding: 0.5em;
     border-radius: .5em;
     transform: translate(1em, 1em);
-    transition: all .2s ease-in-out;
+    transition: all .2s ease;
 }
 
 .back:hover 
@@ -74,6 +94,119 @@ a:hover {
     color: #6b6e74;
     width: 8.2em;
     padding: 0.6em;
+}
+
+.a {
+    background-color: var(--c1);
+    animation-name: load-a;
+}
+.b {
+    background-color: var(--c2);
+    animation-name: load-b;
+}
+.c {
+    background-color: var(--c3);
+    animation-name: load-c;
+}
+.d {
+    background-color: var(--c4);
+    animation-name: load-d;
+}
+.e {
+    background-color: var(--c5);
+    animation-name: load-e;
+}
+.f {
+    background-color: var(--c6);
+    animation-name: load-f;
+}
+
+@keyframes load-a 
+{
+    0% {
+        transform: scale(0);
+        border-radius: 100%;
+    }
+    16.6% {
+        transform: scale(1);
+        border-radius: 0%;
+    }
+}
+
+@keyframes load-b 
+{
+    0% {
+        transform: scale(0);
+        border-radius: 100%;
+    }
+    16.6% {
+        transform: scale(0);
+        border-radius: 100%;
+    }
+    33.3% {
+        transform: scale(1);
+        border-radius: 0%;
+    }
+}
+@keyframes load-c 
+{
+    0% {
+        transform: scale(0);
+        border-radius: 100%;
+    }
+    33.3% {
+        transform: scale(0);
+        border-radius: 100%;
+    }
+    50% {
+        transform: scale(1);
+        border-radius: 0%;
+    }
+}
+@keyframes load-d
+{
+    0% {
+        transform: scale(0);
+        border-radius: 100%;
+    }
+    50% {
+        transform: scale(0);
+        border-radius: 100%;
+    }
+    66.6% {
+        transform: scale(1);
+        border-radius: 0%;
+    }
+}
+@keyframes load-e 
+{
+    0% {
+        transform: scale(0);
+        border-radius: 100%;
+    }
+    66.6% {
+        transform: scale(0);
+        border-radius: 100%;
+    }
+    83.3% {
+        transform: scale(1);
+        border-radius: 0%;
+    }
+}
+@keyframes load-f 
+{
+    0% {
+        transform: scale(0);
+        border-radius: 100%;
+    }
+    83.3% {
+        transform: scale(0);
+        border-radius: 100%;
+    }
+    100% {
+        transform: scale(1);
+        border-radius: 0%;
+    }
 }
 
 @keyframes bounce-a
