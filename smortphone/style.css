@@ -1,0 +1,181 @@
+.app {
+    background-color: blue;
+    width: 10vmin;
+    height: 10vmin;
+    margin: 2vmin;
+    border-radius: 3vmin;
+
+    animation-name: on-hover-exit;
+    animation-duration: 250ms;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+.app:hover {
+    animation-name: on-hover;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 52.5vmin;
+    height: 80vmin;
+
+    padding: 5vmin;
+    margin: 5vmin;
+    border-radius: 5vmin;
+
+    background: rgb(246,129,129);
+    background: linear-gradient(0deg, rgba(246,129,129,1) 0%, rgba(210,224,94,1) 100%);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background: rgb(220,255,226);
+    background: linear-gradient(227deg, rgba(220,255,226,1) 0%, rgba(82,246,167,1) 35%, rgba(129,255,247,1) 100%);
+}
+
+@keyframes on-hover {
+    to {
+        transform: scale(1.3);
+    }
+}
+
+@keyframes on-hover-exit {
+    from {
+        transform: scale(1.3);
+    }
+}
+
+#return {
+    background-color: aqua;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 5px;
+    border-radius: 100vmax;
+    color:black;
+    text-decoration: none;
+    border: 1px solid black;
+    transition: background-color 100ms;
+}
+
+#return:hover {
+    background-color: grey;
+}
+
+#A01 {
+    background: rgb(63,94,251);
+    background: linear-gradient(135deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+#A02 {
+    background: rgb(238,174,202);
+background: linear-gradient(135deg, rgba(238,174,202,1) 0%, rgba(151,110,191,1) 45%, rgba(148,187,233,1) 100%);
+}
+#A03 {
+    background: rgb(210,214,78);
+    background: linear-gradient(135deg, rgba(210,214,78,1) 0%, rgba(151,110,191,1) 35%, rgba(237,156,95,1) 66%, rgba(161,233,148,1) 100%);
+}
+#A04{
+    background: rgb(53,157,255);
+    background: linear-gradient(135deg, rgba(53,157,255,1) 0%, rgba(255,192,192,1) 25%, rgba(255,255,255,1) 50%, rgba(255,192,192,1) 75%, rgba(53,157,255,1) 100%);
+}
+#A11{
+    background: rgb(231,12,12);
+    background: linear-gradient(135deg, rgba(231,12,12,1) 0%, rgba(233,144,4,1) 19%, rgba(243,254,7,1) 39%, rgba(17,228,25,1) 62%, rgba(9,112,249,1) 83%, rgba(213,0,255,1) 100%);
+}
+#A12{
+    background: rgb(231,70,12);
+    background: linear-gradient(135deg, rgba(231,70,12,1) 0%, rgba(222,146,28,1) 25%, rgba(255,255,255,1) 50%, rgba(255,145,214,1) 75%, rgba(218,43,252,1) 100%);
+}
+#A13{
+    background: rgb(231,12,122);
+    background: linear-gradient(135deg, rgba(231,12,122,1) 6%, rgba(212,126,255,1) 50%, rgba(12,32,255,1) 94%);
+}
+#A14{
+    background: rgb(0,0,0);
+    background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(87,87,87,1) 32%, rgba(255,255,255,1) 66%, rgba(129,0,98,1) 100%);
+}
+#A21{
+    background: rgb(0,0,0);
+    background: linear-gradient(135deg, rgba(0,0,0,1) 10%, rgba(255,0,0,1) 50%, rgba(220,255,0,1) 90%);
+}
+#A22{
+    background: rgb(11,158,0);
+    background: linear-gradient(135deg, rgba(11,158,0,1) 10%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 90%);
+}
+#A23{
+    background: rgb(11,158,0);
+    background: linear-gradient(135deg, rgba(11,158,0,1) 10%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 90%);
+}
+#A24{
+    background: rgb(12,35,255);
+    background: linear-gradient(135deg, rgba(12,35,255,1) 10%, rgba(255,255,255,1) 50%, rgba(255,43,43,1) 90%);
+}
+#A31{
+    background: rgb(255,177,12);
+    background: linear-gradient(135deg, rgba(255,177,12,1) 10%, rgba(255,255,255,1) 50%, rgba(0,182,25,1) 90%);
+}
+#A32{
+    background: rgb(255,255,255);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 10%, rgba(22,180,0,1) 50%, rgba(255,48,48,1) 90%);
+}
+#A33{
+    background: rgb(255,48,48);
+    background: linear-gradient(135deg, rgba(255,48,48,1) 10%, rgba(255,255,255,1) 50%, rgba(255,48,48,1) 90%);
+}
+#A34{
+    background: rgb(48,134,255);
+    background: linear-gradient(135deg, rgba(48,134,255,1) 10%, rgba(255,48,48,1) 50%, rgba(23,162,56,1) 90%);
+}
+#A41{
+    background: rgb(255,48,48);
+    background: linear-gradient(135deg, rgba(255,48,48,1) 10%, rgba(229,255,48,1) 50%, rgba(255,48,48,1) 90%);
+}
+#A42{
+    background: rgb(48,91,255);
+    background: linear-gradient(135deg, rgba(48,91,255,1) 10%, rgba(229,255,48,1) 50%, rgba(255,48,48,1) 90%);
+}
+#A43{
+    background: rgb(255,48,48);
+background: linear-gradient(135deg, rgba(255,48,48,1) 0%, rgba(255,255,255,1) 10%, rgba(255,48,48,1) 19%, rgba(255,255,255,1) 28%, rgba(255,48,48,1) 39%, rgba(255,255,255,1) 50%, rgba(255,48,48,1) 60%, rgba(255,255,255,1) 70%, rgba(255,48,48,1) 80%, rgba(255,255,255,1) 90%, rgba(255,48,48,1) 100%);
+}
+#A44{
+    background: rgb(87,197,255);
+    background: linear-gradient(135deg, rgba(87,197,255,1) 10%, rgba(255,255,255,1) 50%, rgba(87,197,255,1) 90%);
+}
+#A51{
+    background: rgb(87,197,255);
+    background: linear-gradient(135deg, rgba(87,197,255,1) 10%, rgba(179,255,175,1) 38%, rgba(237,47,71,1) 62%, rgba(108,255,87,1) 90%);
+}
+#A52{
+    background: rgb(255,87,110);
+    background: linear-gradient(135deg, rgba(255,87,110,1) 10%, rgba(175,189,255,1) 32%, rgba(237,192,47,1) 62%, rgba(174,97,226,1) 90%);
+}
+#A53{
+    background: rgb(136,87,255);
+    background: linear-gradient(135deg, rgba(136,87,255,1) 10%, rgba(187,255,175,1) 32%, rgba(0,0,0,1) 49%, rgba(237,47,110,1) 62%, rgba(194,226,97,1) 90%);
+}
+#A54{
+    background: rgb(0,0,0);
+    background: linear-gradient(135deg, rgba(0,0,0,1) 10%, rgba(255,0,0,1) 32%, rgba(255,255,255,1) 49%, rgba(0,35,255,1) 62%, rgba(0,0,0,1) 90%);
+}
